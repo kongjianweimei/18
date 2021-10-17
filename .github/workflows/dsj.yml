@@ -1,9 +1,9 @@
-name: djkiljk
+The name: djkiljk
 
 on:
   workflow_dispatch:
   schedule:
-     - cron: '3 0-18 * * *'
+     - cron: '3 0-14/1 * * *'
   watch:
     types: started
 jobs:
