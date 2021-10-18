@@ -3,7 +3,7 @@ The name: djkiljk
 on:
   workflow_dispatch:
   schedule:
-     - cron: '3 0-14 * * *'
+     - cron: '3 0-14 * * *' 
   watch:
     types: started
 jobs:
