@@ -24,15 +24,11 @@ proxy.guodongbaohe.com
 const $ = new Env('果冻宝盒');
 let status;
 status = (status = ($.getval("gdbhstatus") || "1")) > 1 ? `${status}` : ""; // 账号扩展字符
-
-let gdbhurlArr = [], gdbhhdArr = [], qxqcount = ''
-let gdbhurl = $.getdata('gdbhurl')
-let gdbhhd= $.isNode() ? (process.env.gdbhhd ? process.env.gdbhhd : "") : ($.getdata('gdbhhd') ? $.getdata('gdbhhd') : "")
-
 const gdbhhdArr = [],
     gdbhurlArr = [],
     gdbhcount = ''
-let gdbhhd = $.getdata('gdbhhd')
+let gdbhurlArr = [], gdbhhdArr = [], gdbhcount = ''
+let gdbhhd = $.isNode() ? (process.env.gdbhhd ? process.env.gdbhhd : "") : ($.getdata('gdbhhd') ? $.getdata('gdbhhd') : "")
 let gdbhurl = $.getdata('gdbhurl')
 let b = Math.round(new Date().getTime() / 1000).toString();
 let DD = RT(30000, 40000)
