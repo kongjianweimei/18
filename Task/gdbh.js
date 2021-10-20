@@ -24,9 +24,7 @@ proxy.guodongbaohe.com
 const $ = new Env('果冻宝盒');
 let status;
 status = (status = ($.getval("gdbhstatus") || "1")) > 1 ? `${status}` : ""; // 账号扩展字符
-const gdbhhdArr = [],
-    gdbhurlArr = [],
-    gdbhcount = ''
+
 let gdbhurlArr = [], gdbhhdArr = [], gdbhcount = ''
 let gdbhhd = $.isNode() ? (process.env.gdbhhd ? process.env.gdbhhd : "") : ($.getdata('gdbhhd') ? $.getdata('gdbhhd') : "")
 let gdbhurl = $.getdata('gdbhurl')
