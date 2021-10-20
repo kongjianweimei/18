@@ -1,9 +1,9 @@
-name: qxqljk
+name: gdbh
 
 on:
   workflow_dispatch:
   schedule:
-     - cron: '3 2-8 * * *'
+     - cron: '3 2 * * *'
   watch:
     types: started
 jobs:
@@ -20,8 +20,11 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行【qxq】'     
+      - name: '运行【gdbh】'     
         run: |
-          node Task/qxq.js
+          node Task/gdbh.js
         env:
-          qxqhd: ${{ secrets.qxqhd }}
+          gdbhhd: ${{ secrets.gdbhhd }}
+          gdbhurl: ${{ secrets.gdbhurl }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
