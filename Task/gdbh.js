@@ -7,7 +7,7 @@
 注册填写邀请码：1H9N65
 每天0.7元 ，5元提现秒到支付宝
 
-获取ck：点击我的  即可获取ck 
+获取ck：点击我的  即可获取ck
 
 js：
 https://raw.githubusercontent.com/wx13069/JD/master/gdbh.js
@@ -24,6 +24,11 @@ proxy.guodongbaohe.com
 const $ = new Env('果冻宝盒');
 let status;
 status = (status = ($.getval("gdbhstatus") || "1")) > 1 ? `${status}` : ""; // 账号扩展字符
+
+let gdbhurlArr = [], gdbhhdArr = [], qxqcount = ''
+let gdbhurl = $.getdata('gdbhurl')
+let gdbhhd= $.isNode() ? (process.env.gdbhhd ? process.env.gdbhhd : "") : ($.getdata('gdbhhd') ? $.getdata('gdbhhd') : "")
+
 const gdbhhdArr = [],
     gdbhurlArr = [],
     gdbhcount = ''
@@ -72,7 +77,7 @@ $.message = ''
 
                     await gdbhqd()
                     await $.wait(2000)
-                    
+
                     await gdbhsp()
 
 
@@ -109,29 +114,29 @@ function gdbhck() {
 //签到
 function gdbhqd(timeout = 0) {
     return new Promise((resolve) => {
-    
-        
+
+
         times = Math.round(new Date().getTime()/1000).toString();
 
         pp = gdbhurl.split('platform=')[1].split('&')[0]
 
         id = gdbhurl.split('member_id=')[1].split('&')[0]
-        
+
         sign = MD5_Encrypt(`member_id=${id}&platform=${pp}&timestamp=${times}&${mm}`)
-        
-        //url = gdbhurl.replace(/timestamp=\d+&signature=\w+/g,`timestamp=${times}&signature=${sign}`) 
-        
+
+        //url = gdbhurl.replace(/timestamp=\d+&signature=\w+/g,`timestamp=${times}&signature=${sign}`)
+
 
         let url = {
             url: `https://proxy.guodongbaohe.com/coins/checkin?member_id=${id}&platform=${pp}&timestamp=${times}&signature=${sign}&`,
             headers: JSON.parse(gdbhhd),
-           
+
         }
 
         $.get(url, async (err, resp, data) => {
             try {
                 data = JSON.parse(data)
-                
+
                 if (data.status == 0) {
 
                     console.log(`\n【签到结果】：${data.result}\n`)
@@ -157,21 +162,21 @@ function gdbhqd(timeout = 0) {
 //视频
 function gdbhsp(timeout = 0) {
     return new Promise((resolve) => {
-        
-        
+
+
         times = Math.round(new Date().getTime()/1000).toString();
 
         pp = gdbhurl.split('platform=')[1].split('&')[0]
 
         id = gdbhurl.split('member_id=')[1].split('&')[0]
-        
-        
+
+
         sign = MD5_Encrypt(`member_id=${id}&platform=${pp}&timestamp=${times}&${mm}`)
 
         let url = {
             url: `https://proxy.guodongbaohe.com/coins/award?member_id=${id}&platform=${pp}&timestamp=${times}&signature=${sign}&`,
             headers: JSON.parse(gdbhhd),
-           
+
         }
 
         $.get(url, async (err, resp, data) => {
