@@ -1,0 +1,34 @@
+{
+    "id": "book9602.app.sub",
+    "name": "小望boxjs订阅",
+    "author": "@book9602",
+    "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10086.png",
+    "repo": "https://github.com/kongjianweimei/18",
+    "apps": [
+    {
+      "id": "xwhbsp",
+      "name": "红包视频",
+      "keys": ["xwhbspbody","xwhbsphd"],
+      "repo": "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.js",
+      "script": "https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.js",
+      "icons": ["https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png","https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png"]
+    },
+        {
+      "id": "smqnw",
+      "name": "全能扫描王抽奖",
+      "keys": ["smqnwbody","smqnwhd"],
+      "repo": "https://raw.githubusercontent.com/book9602/xw/main/smqnw.js",
+      "script": "https://raw.githubusercontent.com/book9602/xw/main/smqnw.js",
+      "icons": ["https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png","https://raw.githubusercontent.com/book9602/xw/main/xwhbsp.png"]
+    },
+        {
+       "id": "gdbh",
+      "name": "果冻宝盒",
+      "author": "@小望",
+      "keys": ["gdbhhd", "gdbhurl","gdbhhd2", "gdbhurl2","gdbhhd3","gdbhurl3","gdbhhd4", "gdbhurl4","gdbhhd5", "gdbhurl5","gdbhhd6", "gdbhurl6","gdbhhd6", "gdbhurl6"],
+      "repo": "https://raw.githubusercontent.com/wx13069/JD/master/gdbh.js",
+      "icons": ["https://raw.githubusercontent.com/book9602/xw/main/gd.png", "https://raw.githubusercontent.com/book9602/xw/main/gd.png"],
+      "script": "https://raw.githubusercontent.com/wx13069/JD/master/gdbh.js"
+    }
+   ]
+}
