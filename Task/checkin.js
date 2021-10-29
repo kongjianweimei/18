@@ -21,7 +21,7 @@ const crypto = require('crypto');
 async function all() {
 
   $.log("【九章头条提现】");
-  let TokenArr = ['fEWNAMgcSnrlcw3OToHEj2vx3-2xiX8C','x1YmVf_xtFu4zqUFzhq3m8BPw1MuimS7 ','opscEfmu0-ZYMPM0MH3fqY-oj4wnp6F9', 'aXx-kVULBnI_wWQi_YcRvwdsQqcJarlW'];
+  let TokenArr = ['fEWNAMgcSnrlcw3OToHEj2vx3-2xiX8C','x1YmVf_xtFu4zqUFzhq3m8BPw1MuimS7 ','opscEfmu0-ZYMPM0MH3fqY-oj4wnp6F9','56cN_cDoo8PfEr2PP85yCOK7FPt-NZH7', 'aXx-kVULBnI_wWQi_YcRvwdsQqcJarlW'];
 
   for (let i = 0; i < TokenArr.length; i++) {
     $.log(`开始执行第${i + 1}个账号`);
@@ -61,7 +61,7 @@ function taskget() {
   "hwMac": "",
   "Generation": "com.dianshijia.mobile.ios",
   "Accept": "*/*",
-  "Authorization": "TURjMU1URmpaVFpsTXpsbVpUQTRPVFZtTnpRM1ptSTNOR0k1WldFNE5EUT18MTYzMzU4MzIzNTk3NDU3NzU3OHwzODY1ZGZkN2YxMzZlZGY1YTIyNmI3MDM2OGY5NDhhN2E4ZWQ2Mjk1",
+  "Authorization": "TURjMU1URmpaVFpsTXpsbVpUQTRPVN2YxMzZlZGY1YTIyNmI3MDM2OGY5NDhhN2E4ZWQ2Mjk1",
   "appId": "19227f89ea1a166451593601eb8a1b4f",
   "cityCode": "430100",
   "erid": "93363",
@@ -149,7 +149,7 @@ function YouthWithdraw() {
   return new Promise((resolve, reject) => {
     const url = "https://ios.baertt.com/v5/wechat/withdraw2.json";
     const headers = {};
-    const body = "p=9NwGV8Ov71o%3DnXy4DSepUrpNij1znriwLz5F0xxoMfi_RJhf9fnYS9ABFPJMOM7jEx17_kYTNFAQDTA49cgTFsNZgF7AFE8jBxQebg2oGNXJXdhtbydx6aGWryTes-AMT1VJT5fEQHzrx6SAZ_nUMDu_xjD5MFyUyh9o-uttQZUQDeUDUG2YjNLrAANQd-3v-gToRHhbFxMgU8_UObscA5rYMX4jbiVS7VtjO_dB7fEjYS80yG1JqAB21VTqvwo2T13H6vePX0XK5T5HWboq5opcbwUcyDuOd7ZZLihn44NvW3cnJ_OAIJx-XWiCo4uNXQIheUDvWzBM_EO5jP6y90KDIOS_si11mVFy4H26xjHn2oLmW_70L3-9v4aLbu0MBN24UIS1aY_T2UhVCKRzrJT8H9jHB-BJIBC3L8X3rQNzAj2fYqXx03cMzfY7Zh4t0nnczPKJs5FvOmfpgN5kk8DK5MXfTQTC27YfvuehFTc_m8Ojx4mDocmc7rf0unPWWh3EIw_C0SK3pnhjPWlh8Bh49u916f606XVZaZBAfiv0MD4ACBoxQ7kBmaVS7fFFNJtMNjf0E8cj5-81xA_JMa-WMmQwMOSEDC_6_YN_O7x-RStrPsFhzkSc4tAZvcuAEbWInp4BAX29tqbGeO2meZVVr4qe19R3EDBTl9tAUqAsvCb8t_fnfRrxv-JjwVdJWpmJEEdIFul6sQK_jo05VwT1yKyb89z2VljcnmENlHh-2H2T0pPNGXqWZ_WMKSJkHfrzOPKIl76_3KBjioZnPW-fEidpwPeFrEGSQNeNpi2Cjct7gqy_V8PjHIdhxuqxzZS-s92XLOzy0qFmNk1s7xpxsCXP0pJ4Bw%3D%3D";
+    const body = "";
     const request = {
       url: url,
       headers: headers,
