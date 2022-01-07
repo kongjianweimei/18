@@ -3,7 +3,7 @@ name: weizq
 on:
   workflow_dispatch:
   schedule:
-     - cron: '2 0,9 * * *'
+     - cron: '0 */1 * * *'
   watch:
     types: started
 jobs:
@@ -20,9 +20,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行【微证券】'     
+      - name: '运行 【燃旅】'
         run: |
-          node Task/txwzq.js
-        env:
-          txwzq_txwzqck: ${{ secrets.txwzq_txwzqck }}
-          txzxg_txzxgck: ${{ secrets.txzxg_txzxgck }}
+          cd ~/JS
+          node Task/ranlv.js
